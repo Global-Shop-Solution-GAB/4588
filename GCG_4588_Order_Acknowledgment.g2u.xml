@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyntaxEdit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pages>
+    <DefaultPage>
+      <Header />
+      <Footer />
+    </DefaultPage>
+  </Pages>
+  <DisplayStrings />
+  <Selection>
+    <SelectionRect>
+      <Location>
+        <X>0</X>
+        <Y>110</Y>
+      </Location>
+      <Size>
+        <Width>24</Width>
+        <Height>3</Height>
+      </Size>
+      <X>0</X>
+      <Y>110</Y>
+      <Width>24</Width>
+      <Height>3</Height>
+    </SelectionRect>
+    <Options>UseColors OverwriteBlocks SelectLineOnTripleClick CopyLineWhenEmpty SelectWordOnCtrlClick</Options>
+  </Selection>
+  <Gutter>
+    <Options>PaintLineNumbers PaintBookMarks PaintLineModificators</Options>
+  </Gutter>
+  <Margin>
+    <Visible>false</Visible>
+  </Margin>
+  <LineStyles />
+  <LineSeparator />
+  <Printing>
+    <Footer />
+    <Header />
+  </Printing>
+  <WhiteSpace />
+  <TextSource>
+    <Position>
+      <X>0</X>
+      <Y>110</Y>
+    </Position>
+    <Lexer>
+      <Scheme>
+        <Author>Quantum Whale, LLC.</Author>
+        <Copyright>Copyright (c) 2004 - 2014 Quantum Whale LLC.</Copyright>
+        <FileType>gas</FileType>
+        <Version>1.5</Version>
+        <Styles>
+          <Style>
+            <Name>idents</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>numbers</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>reswords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>comments</Name>
+            <ForeColor>Green</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>xmlcomments</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>symbols</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>whitespace</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>strings</Name>
+            <ForeColor>Maroon</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>directives</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>htmlparams</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>syntax errors</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>codes nippets</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>255:180:228:180</BackColor>
+          </Style>
+          <Style>
+            <Name>GabReservedWords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabTokenWithBrackets</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabFunctionIntrinsicDebug</Name>
+            <ForeColor>White</ForeColor>
+            <BackColor>Red</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>GabVariable</Name>
+            <ForeColor>Teal</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabVariableSystemDefined</Name>
+            <ForeColor>Teal</ForeColor>
+            <FontStyle>Bold Italic</FontStyle>
+          </Style>
+          <Style>
+            <Name>GabGui</Name>
+            <ForeColor>OrangeRed</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabProgramSubStartEnd</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>LightGray</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+        </Styles>
+      </Scheme>
+    </Lexer>
+    <TextStrings>
+      <Lines>
+        <string>Program.Sub.Preflight.Start</string>
+        <string />
+        <string>Program.Sub.Preflight.End</string>
+        <string />
+        <string>Program.Sub.Main.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("Main_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string />
+        <string>V.Local.sError.Declare(String)</string>
+        <string>V.Local.sOrderNum.Declare(String)</string>
+        <string>V.Local.sParams.Declare(String)</string>
+        <string>V.Local.sSql.Declare(String)</string>
+        <string>V.Local.iRptID.Declare(Long)</string>
+        <string>V.Local.sRptID.Declare(String)</string>
+        <string>V.Local.sValues.Declare(String)</string>
+        <string>V.Local.iBIRunID.Declare(Long)</string>
+        <string>V.Local.iLogID.Declare(Long)</string>
+        <string>V.Local.iRet.Declare(Long)</string>
+        <string />
+        <string>F.ODBC.Connection!con.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)</string>
+        <string />
+        <string>F.Intrinsic.Control.SelectCase(V.Caller.Hook)</string>
+        <string>	'populate hook on sales order screen</string>
+        <string>	F.Intrinsic.Control.Case(11560)</string>
+        <string>		V.Passed.000201.Set("Ack W/Out Price")</string>
+        <string>		</string>
+        <string>	'script 1 hook on sales order screen</string>
+        <string>	F.Intrinsic.Control.Case(11910)</string>
+        <string>		'set the order number</string>
+        <string>		V.Local.sOrderNum.Set(V.Passed.000003)</string>
+        <string>		</string>
+        <string>		F.Intrinsic.Control.If(V.Local.sOrderNum.Length,=,0)</string>
+        <string>			F.Intrinsic.UI.Msgbox("Select a Sales Order")</string>
+        <string>			F.Intrinsic.Control.CallSub(exit)</string>
+        <string>		F.Intrinsic.Control.EndIf</string>
+        <string>		</string>
+        <string>		F.Intrinsic.String.LPad(V.Local.sOrderNum,"0",7,V.Local.sOrderNum)</string>
+        <string>		</string>
+        <string>		'build data</string>
+        <string>		F.Intrinsic.String.Build("{0}!*!P!*!!*!|~|CRYSTAL-OVERRIDE|~|",V.Local.sOrderNum,V.Local.sParams)</string>
+        <string>		F.Global.General.CallWrapperSyncBio(910050,V.Local.sParams)</string>
+        <string>		</string>
+        <string>		'get report</string>
+        <string>		F.Intrinsic.String.Build("Select RptID From V_Bi_Acknwldgmnt Where Order_No = '{0}' and Terminal = '{1}'",V.Local.sOrderNum,V.Caller.Terminal,V.Local.sSql)</string>
+        <string>		</string>
+        <string>		F.ODBC.Connection!con.OpenRecordsetRO("rst",V.Local.sSql)</string>
+        <string />
+        <string>		F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,False)</string>
+        <string>			V.Local.iRptID.Set(V.ODBC.con!rst.FieldVal!Rptid)</string>
+        <string>		F.Intrinsic.Control.EndIf</string>
+        <string>		F.ODBC.con!rst.Close</string>
+        <string>		</string>
+        <string>		F.Intrinsic.String.LPad(V.Local.iRptID,"0",6,V.Local.sRptid)</string>
+        <string>		</string>
+        <string>		'getting report id for custom report that removed price</string>
+        <string>		F.Global.BI.GetIDFromName("OE_4588_ACKNOWLEDGEMENT.rpt",V.Local.iRptID)</string>
+        <string>		</string>
+        <string>		'get runid</string>
+        <string>		F.Global.BI.GetRunID(V.Local.iBIRunID)</string>
+        <string>		'start logging</string>
+        <string>		F.Global.BI.StartLogging(V.Local.iBIRunID,V.Local.iRptID,-1,"",V.Local.iLogID)</string>
+        <string>		</string>
+        <string>		'set params for report</string>
+        <string>		V.Local.sParams.Set("Terminal*!*ReportID*!*IncludesTax*!*Dec*!*Comments")</string>
+        <string>		F.Intrinsic.String.Build("{0}*!*{1}*!**!*.2*!*",V.Caller.Terminal,V.Local.sRptID,V.Local.sValues)</string>
+        <string>		</string>
+        <string>		F.Global.BI.StopLogging(V.Local.iLogid)</string>
+        <string>		</string>
+        <string>		'print report</string>
+        <string>		F.Global.BI.RunReportPreProcessor(V.Local.iBIRunID,V.Local.iLogID,V.Local.sParams,V.Local.sValues,"",-1,True,"",-1,"",-1,"","",V.Local.iRet)</string>
+        <string>		</string>
+        <string>F.Intrinsic.Control.EndSelect</string>
+        <string />
+        <string>'ending program</string>
+        <string>F.Intrinsic.Control.CallSub(exit)</string>
+        <string>	</string>
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string />
+        <string>F.Intrinsic.Control.Label("Main_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4588_Order_Acknowledgment.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.CallSub(exit)</string>
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string />
+        <string />
+        <string>Program.Sub.Main.End</string>
+        <string />
+        <string>Program.Sub.Exit.Start</string>
+        <string>F.Intrinsic.Control.SetErrorHandler("Exit_Err")</string>
+        <string>F.Intrinsic.Control.ClearErrors</string>
+        <string />
+        <string>V.Local.sError.Declare(String)</string>
+        <string />
+        <string>F.ODBC.Connection!con.Close</string>
+        <string>F.Intrinsic.Control.End</string>
+        <string />
+        <string>F.Intrinsic.Control.ExitSub</string>
+        <string />
+        <string>F.Intrinsic.Control.Label("Exit_Err")</string>
+        <string>F.Intrinsic.Control.If(V.Ambient.ErrorNumber,&lt;&gt;,0)</string>
+        <string>	Function.Intrinsic.String.Concat("Project: GCG_4588_Order_Acknowledgment.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.End</string>
+        <string />
+        <string>Function.Intrinsic.Control.EndIf</string>
+        <string />
+        <string />
+        <string>Program.Sub.Exit.End</string>
+        <string />
+        <string>Program.Sub.Comments.Start</string>
+        <string>${$0$}$$}$RLK$}$6/21/2017 3:44:16 PM$}$True</string>
+        <string>${$3$}$0$}$$}$0$}$-1$}$$}$12:00:00 AM$}$Order Acknowledgment without Prices</string>
+        <string>Program.Sub.Comments.End</string>
+      </Lines>
+    </TextStrings>
+  </TextSource>
+  <Scrolling>
+    <WindowOriginY>55</WindowOriginY>
+  </Scrolling>
+  <Outlining>
+    <AllowOutlining>true</AllowOutlining>
+    <ImageSize>8</ImageSize>
+    <Ranges>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>0</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>2</Y>
+        </EndPoint>
+        <Text>Program.Sub.Preflight</Text>
+        <DisplayText>Program.Sub.Preflight</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>4</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>86</Y>
+        </EndPoint>
+        <Text>Program.Sub.Main</Text>
+        <DisplayText>Program.Sub.Main</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>88</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>108</Y>
+        </EndPoint>
+        <Text>Program.Sub.Exit</Text>
+        <DisplayText>Program.Sub.Exit</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>110</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>113</Y>
+        </EndPoint>
+        <Text>Program.Sub.Comments</Text>
+        <DisplayText>Program.Sub.Comments</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+    </Ranges>
+  </Outlining>
+  <HyperText />
+  <Spelling />
+  <Braces />
+</SyntaxEdit>
